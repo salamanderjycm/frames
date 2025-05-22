@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modificar Habitación | Hotel AMANKAY</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../estilos/modif.css">
+</head>
+<body class="bg-light">
+
+  <!-- Header: Barra de navegación -->
+  <header class="bg-primary text-white p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="h4 m-0">Hotel AMANKAY</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Reservas</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container my-5">
+    <section class="row justify-content-center">
+      <div class="col-lg-6">
+        <article class="card shadow-sm">
+          <div class="card-header bg-success text-white text-center">
+            <h2 class="h5 m-0">Formulario de Modificación de Habitación</h2>
+          </div>
+          <div class="card-body">
+            <form action="#" method="POST">
+              <!-- ID de Reserva -->
+              <div class="mb-3">
+                <label for="reservaID" class="form-label">ID de Reserva</label>
+                <input type="text" id="reservaID" name="reservaID" class="form-control" placeholder="Ingrese el ID" required>
+              </div>
+
+              <!-- Nombre del Cliente -->
+              <div class="mb-3">
+                <label for="cliente" class="form-label">Nombre del Cliente</label>
+                <input type="text" id="cliente" name="cliente" class="form-control" placeholder="Ej. Juan Pérez" required>
+              </div>
+
+              <!-- Habitación Actual -->
+              <div class="mb-3">
+                <label for="habitacionActual" class="form-label">Habitación Actual</label>
+                <input type="text" id="habitacionActual" name="habitacionActual" class="form-control" value="102" readonly>
+              </div>
+
+              <!-- Nueva Habitación -->
+              <div class="mb-3">
+                <label for="nuevaHabitacion" class="form-label">Nueva Habitación</label>
+                <select id="nuevaHabitacion" name="nuevaHabitacion" class="form-select" required>
+                  <option selected disabled>Seleccione una opción</option>
+                  <option value="201">201 - Doble</option>
+                  <option value="202">202 - Matrimonial</option>
+                  <option value="203">203 - Suite</option>
+                  <option value="204">204 - Deluxe</option>
+                </select>
+              </div>
+
+              <!-- Motivo del cambio -->
+              <div class="mb-3">
+                <label for="motivo" class="form-label">Motivo del Cambio</label>
+                <textarea id="motivo" name="motivo" class="form-control" rows="3" placeholder="Ej. Ruido en la habitación anterior..."></textarea>
+              </div>
+
+              <!-- Botón -->
+              <div class="d-grid">
+                <button type="submit" class="btn btn-success">Confirmar Cambio</button>
+              </div>
+            </form>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <small>&copy; 2025 Hotel AMANKAY. Todos los derechos reservados.</small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
